@@ -4,8 +4,10 @@ func main() {
 
 }
 
-const pricePerKm = 10.0
-const pricePerMinute = 2.0
+const (
+	pricePerKm     = 10.0
+	pricePerMinute = 2.0
+)
 
 type TripParameters struct {
 	Distance float64
