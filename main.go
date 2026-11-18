@@ -1,0 +1,18 @@
+package main
+
+func main() {
+
+}
+
+const pricePerKm = 10.0
+const pricePerMinute = 2.0
+
+type TripParameters struct {
+	Distance float64
+	Duration float64
+}
+
+func CalculateBasePrice(t TripParameters) float64 {
+	basePrice := t.Distance*pricePerKm + t.Duration*pricePerMinute
+	return basePrice
+}
